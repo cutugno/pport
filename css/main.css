@@ -9,27 +9,30 @@ body {
 /* Navbar */
 
 .site-navbar {
-    background: #2e373c;
-    min-height: 50px;
+    background: #d4e7f6;
+    min-height: 140px;
     padding: 20px 0;
     border: 0;
 }
 .site-navbar a {
-    color: #fff;
+    color: #436076;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
 }
 .site-navbar .current {
-    background: #1b93c7;
+    background: #8BC8F7;
+    color: #fff;
 }
 .site-navbar li a.current:hover {
-    background: #1b93c7;
+    background: #8BC8F7;
 }
 .site-navbar li a:hover {
-    background: #1b93c7;
+    background: #8BC8F7;
+    color: #fff;
 }
 .site-navbar li a:focus {
-    background: #1b93c7;
+    background: #8BC8F7;
+    color: #fff;
 }
 .navbar-brand {
     padding-top: 0;
@@ -41,6 +44,16 @@ body {
     border: 1px solid #fff;
     border-radius: 0;
 }
+.site-navbar .navbar-nav {
+	margin-top: 25px;
+}
+
+@media (max-width: 991px) {
+  .site-navbar .navbar-nav {
+	margin-top: 55px;
+  }
+}
+
 /* Main */
 
 .site-main {
@@ -123,7 +136,7 @@ background: rgba(27, 147, 199, 0.8)
 /* Services */
 
 #services {
-    background: #bf544e;
+    background: #666F76;
     color: #fff;
 }
 #services h3 {
@@ -160,6 +173,21 @@ background: rgba(27, 147, 199, 0.8)
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
+#services i.fa-car {
+	margin: -8px 0;
+}
+#services i.fa-ship {
+	margin: -8px 0;
+}
+#services i.fa-eur {
+	margin: -6px 0 0 -6px;
+}
+@media (max-width: 991px) {
+ #services .servizio {
+	padding-bottom: 40px;
+ }
+}
+
 /* portfolio */
 
 #portfolio {
@@ -206,7 +234,12 @@ background: rgba(27, 147, 199, 0.8)
 }
 /* Team */
 
-#team {} #team h4 {
+#team {
+	background: #A8B7C3;
+	color: #fff;
+} 
+
+#team h4 {
     font-size: 1.6em;
     font-weight: bold;
     text-transform: uppercase;
@@ -305,6 +338,19 @@ background: rgba(27, 147, 199, 0.8)
     height: 100%;
     border: none;
 }
+
+#contact p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #444;
+    padding-left: 15px;
+}
+
+#contact h4 {
+	padding-left: 15px;
+}
+
 #contact .fa {
     font-size: 1.2em;
     color: #8f8f8f;
@@ -315,7 +361,7 @@ background: rgba(27, 147, 199, 0.8)
     font-weight: 300;
     color: #666;
 }
-.frm input[type="text"], .frm input[type="email"] {
+.frm input[type="text"], .frm input[type="email"], .frm input[type="date"], .frm select {
     background: #fcfcfc !important;
     border-radius: 0 !important;
     height: 50px;
@@ -325,14 +371,16 @@ textarea {
     border-radius: 0 !important;
     padding: 10px !important;
     font-size: 1.2em;
+    resize: none;
 }
 .btn-biru {
-    background: #1b93c7;
+    background: #8BC8F7;
     border-radius: 0 !important;
     border: 0 !important;
 }
 .btn-biru:hover {
-    background: #0170a0;
+    background: #1F2D38;
+    color: #fff;
 }
 #success p {
     padding: 15px;
@@ -446,7 +494,7 @@ button.close {
 
 @media (max-width: 991px) {
     .site-main {
-        margin-top: 90px;
+        margin-top: 140px;
    }
    .carousel-caption {
        top: 0;

@@ -10,7 +10,8 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/animate.css">
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <!-- font -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -37,12 +38,10 @@
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="active"><a href="#main">Home</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#services">Services</a></li>
-                                    <li><a href="#portfolio">Portfolio</a></li>
-                                    <li><a href="#team">Team</a></li>
-                                    <li><a href="#blog">Blog</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="#about">Chi Siamo</a></li>
+                                    <li><a href="#services">Servizi</a></li>
+                                    <li><a href="#contact">Prenotazioni</a></li>                                    
+                                    <li><a href="#team">Partner</a></li>
                                 </ul>
                             </div>
                             <!--/.nav-collapse -->
@@ -51,31 +50,33 @@
                     <main id="main" class="site-main">
                     <!-- Carousel -->
                     <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+						<!--
                         <ol class="carousel-indicators wow fadeInUp">
-                            <li data-target="#carousel-example-captions" data-slide-to="0" class=""></li>
+                            <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
-                            <li data-target="#carousel-example-captions" data-slide-to="2" class="active"></li>
+                            <li data-target="#carousel-example-captions" data-slide-to="2" class=""></li>
                         </ol>
+                        -->
                         <div class="carousel-inner">
-                            <div class="item">
-                                <img class="wow pulse" data-wow-duration="3s" alt="1" src="images/bg-1.jpg" alt="bg-1">
-                                <div class="carousel-caption">
-                                    <h3 class="wow bounceInLeft" data-wow-duration="2s">Modern, Creative, Responsive!</h3>
-                                    <span class="wow bounceInRight" data-wow-duration="2s">Nulla vitae elit libero, a pharetra augue mollis interdum.</span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="wow pulse" data-wow-duration="3s" alt="2" src="images/bg-2.jpg" alt="bg-2">
-                                <div class="carousel-caption">
-                                    <h3 class="wow bounceInLeft" data-wow-duration="2s">One Page Responsive Template</h3>
-                                    <span class="wow bounceInRight" data-wow-duration="2s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                                </div>
-                            </div>
                             <div class="item active">
-                                <img class="wow pulse" data-wow-duration="3s" alt="3" src="images/bg-3.jpg" alt="bg-3">
+                                <img class="wow pulse" data-wow-duration="5s" alt="1" src="images/carousel1.jpg">
                                 <div class="carousel-caption">
-                                    <h3 class="wow bounceInLeft" data-wow-duration="2s">Simple, Beautiful Design </h3>
-                                    <span class="wow bounceInRight" data-wow-duration="2s">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</span>
+                                    <h3 class="wow bounceInLeft" data-wow-duration="2s">Parcheggio privato custodito</h3>
+                                    <span class="wow bounceInRight" data-wow-duration="2s">a 200 metri dal Porto di Formia</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="wow pulse" data-wow-duration="5s" alt="2" src="images/carousel2.jpg">
+                                <div class="carousel-caption">
+                                    <h3 class="wow bounceInLeft" data-wow-duration="2s">Area Videosorvegliata</h3><br>   
+                                    <span class="wow bounceInRight" data-wow-duration="2s">24 ore su 24</span>                                
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="wow pulse" data-wow-duration="5s" alt="3" src="images/carousel3.jpg">
+                                <div class="carousel-caption">
+                                    <h3 class="wow bounceInLeft" data-wow-duration="2s">Tariffa giornaliera 8€</h3><br>
+                                    <span class="wow bounceInRight" data-wow-duration="2s">Chiama adesso per informazioni</span>
                                 </div>
                             </div>
                         </div>
@@ -86,19 +87,20 @@
                         <span class="fa fa-chevron-right"></span>
                         </a>
                     </div>
-                    <!-- ABOUT -->
+                    <!-- CHI SIAMO -->
                     <section id="about">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h3>About</h3>
+                                    <h3>Chi siamo</h3>
                                 </div>
                                 <div class="col-md-6 col-sm-6 wow bounceInLeft">
-                                    <p>Lorem ipsum dolor sit amet, ne qui animal regione adversarium, ferri nonumes signiferumque qui no, errem doming persecuti pro at. At sit suavitate consectetuer. Ad nec vide tincidunt. An esse docendi his, pro eius dicta dicit id. Qui an ludus albucius delectus, nec in meis corpora, dolorum nusquam torquatos quo ex.</p>
-                                    <p>Ad quot facilisis conceptam pro. Per omnis movet ei. Vis tation euismod cu, cu quod dolorem mediocritatem qui, qui suscipit vulputate eloquentiam in. His malis simul percipitur id. In nam graece nostrum deserunt, eos sonet omittam expetenda ei. Ei sed paulo nonumes petentium.</p>
+                                    <p>Il primo Parcheggio realizzato a Formia, a soli 200 metri dal Porto e da esso visibile. Da oltre 15 anni in collaborazione con le più accreditate strutture turistico-alberghiere delle Isole Pontine, Parcheggio Portuense garantisce il servizio di ritiro, sosta e consegna auto tutto l'anno. Pacchetti speciali lunga sosta; soluzioni vantaggiose per diving center. </p>
+                                    <p>I nostri operatori effettuano il servizio in sede e con postazione fissa all'interno del Porto di Formia.</p>
                                 </div>
                                 <div class="col-md-6 col-sm-6 wow bounceInRight">
-                                    <p>Mazim hendrerit at mei. Mei no nibh quaeque deserunt, ea veniam doctus adipisci quo. Feugiat reprehendunt ad nec. Delenit denique his et. Te verear accusamus pro, cum indoctum consequat dissentiunt ut, ex sumo labore eos. Propriae posidonium definitionem has te, ignota delectus apeirian te pri. Ne per autem periculis consequuntur.</p>
+									<img src="images/uk_flag.png" alt="English Flag" />
+                                    <p>Guarded private parking. Valet parking to/from the train station and the pier.</p>
                                     <p class="icon-about">
                                     <a href="#"><i class="fa fa-weibo"></i></a>
                                     <a href="#"><i class="fa fa-facebook-square"></i></a>
@@ -111,32 +113,35 @@
                             </div>
                         </div>
                     </section>
-                    <!-- SERVICES -->
+                    <!-- SERVIzi -->
                     <section id="services">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h3>Our Services</h3>
+                                    <h3>I nostri servizi</h3>
                                 </div>
-                                <div class="col-md-4 col-sm-4 wow bounceInLeft">
-                                    <p><span><i class="fa fa-desktop"></i></span></p>
-                                    <h4>User Interface </h4>
-                                    <p>Lorem ipsum dolor sit amet, ne qui animal regione adversarium, ferri nonumes signiferumque qui no, errem doming persecuti pro at.</p>
+                                <div class="servizio col-md-4 col-sm-4 wow bounceInLeft">
+                                    <p><span><i class="fa fa-car" aria-hidden="true"></i></span></p>
+                                    <h4>Parcheggio giornaliero e notturno</h4>
+                                    <p>di autoveicoli, furgoni, cicli e motocicli anche su prenotazione telefonica.</p>
+									<h4>Costo sosta giornaliera €8</h4>
                                 </div>
-                                <div class="col-md-4 col-sm-4 wow bounceInUp">
-                                    <p><span><i class="fa fa-mobile"></i></span></p>
-                                    <h4>Mobile Aplications</h4>
-                                    <p>Mazim hendrerit at mei. Mei no nibh quaeque deserunt, ea veniam doctus adipisci quo. Feugiat reprehendunt ad nec. Delenit denique his et. </p>
+                                <div class="servizio col-md-4 col-sm-4 wow bounceInUp">
+                                    <p><span><i class="fa fa-ship" aria-hidden="true"></i></span></p>
+                                    <h4>Servizio Isole Pontine (Ventotene e Ponza)</h4>
+                                    <p>Ritiro e consegna auto presso il Molo Vespucci/Banchina Azzurra (imbarco traghetti ed aliscafi) oppure presso la stazione ferroviaria di Formia.</p>
+                                    <h4>Costo servizio GRATUITO</h4>
                                 </div>
-                                <div class="col-md-4 col-sm-4 wow bounceInRight">
-                                    <p><span><i class="fa fa-thumbs-up"></i></span></p>
-                                    <h4>Corporate Branding</h4>
-                                    <p>Mazim hendrerit at mei. Mei no nibh quaeque deserunt, ea veniam doctus adipisci quo. Feugiat reprehendunt ad nec. Delenit denique his et. </p>
+                                <div class="servizio col-md-4 col-sm-4 wow bounceInRight">
+                                    <p><span><i class="fa fa-eur" aria-hidden="true"></i></span></p>
+                                    <h4>TARIFFA SPECIALE SETTIMANALE</h4>
+									<p>1 settimana di sosta, compreso servizio di ritiro e consegna auto </p>
+                                    <h4>Costo sosta settimanale €50</h4>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <!-- portfolio -->
+                    <!-- portfolio
                     <section id="portfolio">
                         <div class="container">
                             <div class="row">
@@ -170,65 +175,9 @@
                             </div>
                         </div>
                     </section>
-                    <!-- team -->
-                    <section id="team">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h3>Solid Team</h3>
-                                </div>
-                                <div class="col-md-3 col-sm-3 wow bounceInLeft">
-                                    <div class="imgteam">
-                                        <ul class="wow fadeInUp">
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        </ul>
-                                        <img src="images/p1.jpg" alt="p1">
-                                    </div>
-                                    <h4>Alexander Kruv</h4>
-                                    <p>Senior Developer</p>
-                                </div>
-                                <div class="col-md-3 col-sm-3 wow bounceInLeft">
-                                    <div class="imgteam">
-                                        <ul class="wow fadeInUp">
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        </ul>
-                                        <img src="images/p2.jpg" alt="p2">
-                                    </div>
-                                    <h4>Nabila Ratna</h4>
-                                    <p>User Interface Designer</p>
-                                </div>
-                                <div class="col-md-3 col-sm-3 wow bounceInRight">
-                                    <div class="imgteam">
-                                        <ul class="wow fadeInUp">
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        </ul>
-                                        <img src="images/p3.jpg" alt="p3">
-                                    </div>
-                                    <h4>Victor M.</h4>
-                                    <p>Marketing</p>
-                                </div>
-                                <div class="col-md-3 col-sm-3 wow bounceInRight">
-                                    <div class="imgteam">
-                                        <ul class="wow fadeInUp">
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        </ul>
-                                        <img src="images/p4.jpg" alt="p4">
-                                    </div>
-                                    <h4>John Reymond</h4>
-                                    <p>Senior Developer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Blog Posts -->
+                     -->
+                   
+                    <!-- Blog Posts
                     <section id="blog">
                         <div class="container">
                             <div class="row">
@@ -263,57 +212,163 @@
                             </div>
                         </div>
                     </section>
+                    -->
+                    
+                     <!-- Prenotazioni -->
                     <section id="contact">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h3>Contact</h3>
+                                    <h3>Prenotazioni</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="fluid-wrapper">
-                            <!-- IFRAME MAPS -->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.597246977152!2d103.83558863343859!3d1.2954058678650624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11238a8b9375%3A0x887869cf52abf5c4!2sSingapore!5e0!3m2!1sen!2s!4v1393173081341" width="600" height="350" frameborder="0" style="border:0"></iframe>
+                            <!-- IFRAME MAPS -->                         
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.49782691942!2d13.603077951463028!3d41.2544954120832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133ad26ec3661353%3A0xb5e0a896bc64e036!2sParcheggio+Portuense!5e0!3m2!1sit!2sit!4v1464000474854" width="600" height="350" frameborder="0" style="border:0"></iframe>
                         </div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4 col-sm-4 wow bounceInLeft">
                                     <br>
-                                    <p class="mail"> <i class="fa fa-map-marker"></i> &nbsp; 1230 Albert Street # 12 -090 Singapore </p>
-                                    <p class="mail"> <i class="fa fa-phone-square"></i>&nbsp; +65123456-NUMBER </p>
+                                    <h4>Parcheggio Portuense</h4>
+                                    <p class="mail"> <i class="fa fa-map-marker"></i> &nbsp; via Cristoforo Colombo, 20 - Formia (LT)</p>
+                                    <p class="mail"> <i class="fa fa-phone-square"></i>&nbsp; <a href="tel:+393398188257">339 8188257</a> - <a href="tel:+393898241014">389 8241014</a></p>
+                                    <p><small><strong>Da Autostrada del Sole</strong>:<br>
+									   uscita Cassino - prendere SS 630 dir. Formia<br>
+									   <strong>Da Roma-Latina-Gaeta</strong>:
+									   prendere SS 148 Pontina - a Formia, prima rotonda a SX
+									</small></p>
                                 </div>
                                 <div class="col-md-8 col-sm-8 wow bounceInRight">
-                                    <form role="form" class="frm" method="post" action="">
+									<p>Per richiedere informazioni generali o per effettuare una prenotazione può compilare il modulo. (I campi contrassegnati con l'asterisco sono obbligatori).<br>
+									In alternativa, può telefonare ai numeri <a href="tel:+393398188257">339 8188257</a> o <a href="tel:+393898241014">389 8241014</a></p>
+                                    <form role="form" class="frm" method="post" action="" id="formpren">
                                         <div class="col-md-12">
                                             <div id="success"></div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
-                                                <label for="Name">Name *</label>
-                                                <input type="text" class="form-control" name="name" id="Name" placeholder="Enter name">
+                                                <label for="nome">Nome *</label>
+                                                <input type="text" class="form-control" name="nome" id="nome" placeholder="">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="Email">Email *</label>
-                                                <input type="email" class="form-control" Name="email" id="Email" placeholder="Enter email">
+                                                <label for="telefono">Telefono *</label>
+                                                <input type="text" class="form-control" name="telefono" id="telefono" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label for="Message">Messages *</label>
-                                                <textarea name="message" id="Message" class="form-control" rows="3" placeholder="Enter messages"></textarea>
+                                                <label for="richiesta">La vs. richiesta *</label>
+                                                 <select id="richiesta" name="richiesta" class="form-control">
+												   <option value="1">Prenotazione Parcheggio</option>
+												   <option value="2">Prenotazione Servizio Isole</option>
+												   <option value="3">Informazioni Generali</option>
+												</select>
                                             </div>
-                                            <input type="submit" id="submit" name="submit" value="Send Message" class="btn btn-primary btn-lg btn-block btn-biru" />
+                                         </div>
+                                         <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="arrivo">Data e ora di arrivo *</label>
+                                                <input type="text" class="form-control datepicker" name="arrivo" id="arrivo" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="partenza">Data e ora di partenza *</label>
+                                                <input type="text" class="form-control datepicker" name="partenza" id="partenza" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="targa">Targa *</label>
+                                                <input type="text" class="form-control" name="targa" id="targa" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="note">Note</label>
+                                                <textarea class="form-control" name="note" id="note" placeholder="" rows=6 ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">  
+                                            <input type="submit" id="submit" name="submit" value="Invia Prenotazione" class="btn btn-primary btn-lg btn-block btn-biru" />
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </section>
+                    
+                     <!--partner -->
+                    <section id="team">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>I nostri Partner</h3>
+                                </div>
+                                <div class="col-md-3 col-sm-3 wow bounceInLeft">
+                                    <div class="imgteam">
+                                        <ul class="wow fadeInUp">
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                                        </ul>
+                                        <img src="images/p1.jpg" alt="p1">
+                                    </div>
+                                    <h4>Alexander Kruv</h4>
+                                    <p>Senior Developer</p>
+                                </div>
+                                <div class="col-md-3 col-sm-3 wow bounceInLeft">
+                                    <div class="imgteam">
+                                        <ul class="wow fadeInUp">
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                                        </ul>
+                                        <img src="images/p2.jpg" alt="p2">
+                                    </div>
+                                    <h4>Nabila Ratna</h4>
+                                    <p>User Interface Designer</p>
+                                </div>
+                                <div class="col-md-3 col-sm-3 wow bounceInRight">
+                                    <div class="imgteam">
+                                        <ul class="wow fadeInUp">
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                             jquery-ui.min           </ul>
+                                        <img src="images/p3.jpg" alt="p3">
+                                    </div>
+                                    <h4>Victor M.</h4>
+                                    <p>Marketing</p>
+                                </div>
+                                <div class="col-md-3 col-sm-3 wow bounceInRight">
+                                    <div class="imgteam">
+                                        <ul class="wow fadeInUp">
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                                        </ul>
+                                        <img src="images/p4.jpg" alt="p4">
+                                    </div>
+                                    <h4>John Reymond</h4>
+                                    <p>Senior Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     </main>
                     <footer>
-                        Copyright &copy; 2014 Company <br>
+                        Copyright &copy; 2014 Cjquery.datetimepickerompany <br>
                         Default - One Page Responsive Templates by <a href="http://templatesuper.com">TemplateSuper</a>
                     </footer>
                 </div>
@@ -361,9 +416,11 @@
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
                 <!-- Include all compiled plugins (below), or include individual files as needed -->
                 <script src="js/bootstrap.min.js"></script>
+                <script src="js/jquery.datetimepicker.full.min.js"></script>
                 <script src="js/jquery.singlePageNav.js"></script>
                 <script src="js/main.js"></script>
                 <script src="js/wow.min.js"></script>
+                <script src="js/jquery.validate.js"></script>
                 <script>new WOW().init();</script>
             </body>
         </html>

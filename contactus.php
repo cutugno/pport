@@ -1,28 +1,52 @@
 <?php 
-$name = Trim(stripslashes($_POST['name'])); 
+$nome = Trim(stripslashes($_POST['nome'])); 
+$telefono = Trim(stripslashes($_POST['telefono'])); 
 $email = Trim(stripslashes($_POST['email'])); 
-$message = Trim(stripslashes($_POST['message'])); 
+$richiesta = Trim(stripslashes($_POST['richiesta'])); 
+switch ($richiesta) {
+	case 1:
+		$richiesta="Prenotazione parcheggio";
+		break;
+	case 2:
+		$richiesta="Prenotazione Servizio Isole";
+		break;
+	case 3: 
+		$richiesta="Informazioni Generali";
+		break;
+}
+$arrivo = Trim(stripslashes($_POST['arrivo'])); 
+$partenza = Trim(stripslashes($_POST['partenza'])); 
+$targa = Trim(stripslashes($_POST['targa'])); 
+$note = Trim(stripslashes($_POST['note'])); 
  
 $to = 'YOUR@EMAIL.COM';//your email address
 $subject = 'the subject'; //subject email
-$message = 'FROM: '.$name.' Email: '.$email.' Message: '.$message;
+$testo="<strong>Richiesta di prenotazione:</strong><br>
+	<strong>Nome</strong>: $nome<br>
+	<strong>Telefono</strong>: $telefono<br>
+	<strong>Richiesta</strong>: $richiesta<br>
+	<strong>Data di arrivo</strong>: $arrivo<br>
+	<strong>Data di partenza</strong>: $partenza<br>
+	<strong>Targa</strong>: $targa<br>
+	<strong>Note</strong>: $note";
+	
 $headers = 'From: '.$email. "\r\n";
 
-if (!empty($_POST['name'])  && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) && !empty($_POST['message']) ) {
+if (!empty($_POST['nome'])  && !empty($_POST['telefono']) && !empty($_POST['richiesta']) && !empty($_POST['arrivo']) && !empty($_POST['partenza']) && !empty($_POST['targa']) ) {
  
   // detect & prevent header injections
   $test = "/(content-type|bcc:|cc:|to:)/i";
   foreach ( $_POST as $key => $val ) {
     if ( preg_match( $test, $val ) ) {
-      exit;
+      exit ("non ci provare");
     }
   }
   
   //send email
-  mail($to, $subject, $message, $headers);
-   echo "<p  class='bg-success'>Thank you, your message was sent!</p>";
+  mail($to, $subject, $testo, $headers);
+  echo "<p class='bg-success'>La sua prenotazione è stata inviata</p>";
 } else {
-  echo "<p  class='bg-danger'>Upppss, you need to fill in all required fields or check invalid email format</p>";
+  echo "<p class='bg-danger'>Devi compilare tutti i campi contrassegnati con l'asterisco</p>";
 }
 
 ?>

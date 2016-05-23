@@ -24,5 +24,11 @@ $(document).ready(function(){
         });
         return false;   
     });
+       
+    // date
+    $(function() {
+		$(".datepicker").datetimepicker();
+	});
+	
      
 });
