@@ -62,10 +62,12 @@ body {
 /* carousel */
 
 .carousel-caption {
-    bottom: 100px;
+    bottom: 30px;
+    right: 10%;
+    left: 10%;
 }
 .carousel-caption h3 {
-    font-size: 4.5em;
+    font-size: 3.7em;
     text-transform: uppercase;
     padding: 10px 25px;
     display: inline-block;
@@ -492,29 +494,43 @@ button.close {
 }
 /* CUSTOM RESPONSIVE */
 
+@media (max-width: 1024px) {
+	.carousel-caption h3 {
+		font-size: 3em;
+	}
+}
+
 @media (max-width: 991px) {
-    .site-main {
-        margin-top: 140px;
-   }
-   .carousel-caption {
-       top: 0;
-       padding: 0;
-  }
-  .carousel-caption h3 {
-      font-size: 1em;
- }
+	.site-main {
+		margin-top: 140px;
+	}
+	.carousel-caption {
+	   top: 0;
+	   padding: 0;
+	}
+	.carousel-caption h3 {
+	  font-size: 2em;
+	}
 }
 @media (max-width: 767px) {
-    #about h3, #services h3, #portfolio h3, #team h3, #blog h3, #contact h3 {
-        font-size: 3em;
-   }
-   .frm .col-md-6, .frm .col-md-12 {
-       padding: 0;
-  }
-  .carousel-caption span {
-      font-size: 0.7em;
- }
- .alignright, .alignleft {
-     width: 100%;
-}
+	#about h3, #services h3, #portfolio h3, #team h3, #blog h3, #contact h3 {
+		font-size: 3em;
+	}
+	.frm .col-md-6, .frm .col-md-12 {
+	   padding: 0;
+	}
+	.carousel-caption h3 {
+	font-size: 1em;
+	margin-bottom: 0;
+	}
+	.carousel-caption span {
+	  font-size: 0.7em;
+	}
+	.alignright, .alignleft {
+	 width: 100%;
+	}
+	#about, #services, #portfolio, #team, #blog, #contact {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
 }
