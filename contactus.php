@@ -43,8 +43,7 @@ if (!empty($_POST['nome'])  && !empty($_POST['telefono']) && !empty($_POST['rich
   }
   
   //send email
-  mail($to, $subject, $testo, $headers);
-  echo "<p class='bg-success'>La sua prenotazione è stata inviata</p>";
+  echo mail($to, $subject, $testo, $headers) ? "<p class='bg-success'>La sua prenotazione è stata inviata</p>" : "<p class='bg-warning'>Il server di posta non permette l'invio di email</p>";
 } else {
   echo "<p class='bg-danger'>Devi compilare tutti i campi contrassegnati con l'asterisco</p>";
 }
