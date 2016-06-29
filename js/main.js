@@ -19,8 +19,10 @@ $(document).ready(function(){
     });
     // Contact
     $('#submit').click(function(){ 
+		$("#sending").show();
         $.post("contactus.php", $(".frm").serialize(),  function(response) {
-            $('#success').html(response);            
+			$("#sending").hide();
+            $("#success").html(response);            
         });
         return false;   
     });
